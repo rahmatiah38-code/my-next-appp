@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { UserProvider } from "@/context/UserContext";
 import { AuthProvider } from "@/context/AuthContext";
 import { FavoriteProvider } from "@/context/FavoriteContext";
+import ChatWidget from "@/components/ChatWidget";
 
 const fontSans = localFont({
   src: [
@@ -43,6 +44,7 @@ export default function RootLayout({ children }) {
 
               <main className="flex-1">
                 {children}
+                <ChatWidget />
               </main>
 
               <Footer />
